@@ -16,17 +16,21 @@
   </head>
   <body>
     <!-- Write your HTML code here, you can delete everything withing the body tags -->
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./assets/img/rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div class="d-block mx-auto mt-5 bg-white rounded shadow">
+      <div id="theCard" class="card rounded shadow bg-white my-5">
+        <p id="cardContent"></p>
+      </div> 
+    </div>
+
+    <button id="btn-new" class="btn btn-light mt-3 d-block mx-auto mb-4 rounded shadow">New cards</button>
+
+    <div class="mt-2 d-flex flex-column flex-sm-row gap-2 justify-content-center align-items-center px-3">
+     <label class="d-flex align-items-center gap-1 text-white w-100 rounded shadow">
+     Wide: <input id="input-wide" type="number" value="300" class="form-control">
+     </label>
+     <label class="d-flex align-items-center gap-1 text-white w-100 rounded shadow">
+     High: <input id="input-high" type="number" value="440" class="form-control">
+     </label>
     </div>
 
     <!-- Do not delete this script tag, this is what connects your HTML with the Javascript code -->
